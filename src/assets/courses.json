@@ -1,0 +1,49 @@
+{
+  "VBA" : {
+    "hour" : "40 - 50",
+    "icon" : "https://firebasestorage.googleapis.com/v0/b/tracker-c3f1e.appspot.com/o/VBA.svg?alt=media&token=1f895008-caff-4af1-abaf-f31b226edc0f",
+    "name" : "VBA (Macros)",
+    "order" : 2,
+    "route" : "VBA",
+    "sal" : "₹4.5"
+  },
+  "aws" : {
+    "hour" : "25 - 35",
+    "icon" : "https://firebasestorage.googleapis.com/v0/b/tracker-c3f1e.appspot.com/o/AWS.svg?alt=media&token=7735f13b-64e9-46bf-a01f-2d82bebfddb1",
+    "name" : "AWS(Amazon Web Service)",
+    "order" : 5,
+    "route" : "aws"
+  },
+  "excel" : {
+    "hour" : "30 - 40",
+    "icon" : "https://firebasestorage.googleapis.com/v0/b/tracker-c3f1e.appspot.com/o/Excel.svg?alt=media&token=c9160b4b-76bf-4edf-8c47-214e68faa3ac",
+    "name" : "Basics to Advanced Excel",
+    "order" : 1,
+    "route" : "excel",
+    "sal" : "₹2.50"
+  },
+  "powerbi" : {
+    "hour" : "30 - 40",
+    "icon" : "https://firebasestorage.googleapis.com/v0/b/tracker-c3f1e.appspot.com/o/PowerBI.svg?alt=media&token=4a52cd86-a430-4b2a-8923-a2a5eec8e2c8",
+    "name" : "Power BI",
+    "order" : 4,
+    "route" : "powerbi",
+    "sal" : "₹5.5"
+  },
+  "sql" : {
+    "hour" : "30 - 40",
+    "icon" : "https://firebasestorage.googleapis.com/v0/b/tracker-c3f1e.appspot.com/o/SQL.svg?alt=media&token=180b029e-11f7-4324-9dd1-e4308378dfe4",
+    "name" : "SQL and PL/SQL",
+    "order" : 3,
+    "route" : "sql",
+    "sal" : "₹4.5 - ₹5"
+  },
+  "tally" : {
+    "hour" : "35 - 40",
+    "icon" : "https://firebasestorage.googleapis.com/v0/b/tracker-c3f1e.appspot.com/o/Tally.svg?alt=media&token=82fac9f3-c769-43b0-aba1-a32285b26fe7",
+    "name" : "Tally For GST",
+    "order" : 6,
+    "route" : "tally",
+    "sal" : "₹2.5 - ₹3"
+  }
+}
