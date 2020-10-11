@@ -1,7 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ApiInterceptor } from './core/api.interceptor';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,7 +12,7 @@ import { CourseComponent } from './course/course.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
-
+import { NguCarouselModule } from '@ngu/carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,9 +27,11 @@ import { MatIconModule } from '@angular/material/icon';
     HttpClientModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    BrowserTransferStateModule,
+    NguCarouselModule
   ],
-  providers: [SeoService],
+  providers: [SeoService, { provide: HTTP_INTERCEPTORS, useClass: ApiInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

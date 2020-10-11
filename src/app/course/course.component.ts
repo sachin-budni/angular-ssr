@@ -28,7 +28,7 @@ export class CourseComponent implements OnInit {
     this.http.get('assets/courses.json').subscribe((courses) => {
       const courseName = this.route.snapshot.paramMap.get('course');
       this.course = courses[courseName] as Course;
-      console.log(this.course);
+      // console.log(this.course);
       this.seo.generateTags({
         title: this.course.name,
         description: this.course.route,
